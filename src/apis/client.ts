@@ -5,7 +5,7 @@ if (process.env.NODE_ENV === 'development') {
   url = 'http://localhost:3001/api/v1';
 
 } else if (process.env.NODE_ENV === 'production') {
-  url = 'https://photographar-rails-backend.herokuapp.com/api/v1';
+  url = 'https://photographar-api.herokuapp.com/api/v1';
 }
 
 export const client = axios.create({
