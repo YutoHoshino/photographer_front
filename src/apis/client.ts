@@ -10,5 +10,9 @@ if (process.env.NODE_ENV === 'development') {
 
 export const client = axios.create({
   baseURL: url,
+  headers: {
+    'Content-Type': 'application/json',
+    'X-Requested-With': 'XMLHttpRequest',
+  },
   withCredentials: true
 })
