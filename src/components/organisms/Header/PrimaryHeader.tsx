@@ -86,7 +86,7 @@ export const PrimaryHeader = () => {
         currentUser ? 
 
 
-          <HeaderBar color="default">
+          <HeaderBar>
 
             <Toolbar sx={{ padding: {xs: '10px', md: '0 320px'} }}>
 
