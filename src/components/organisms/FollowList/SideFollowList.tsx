@@ -74,7 +74,6 @@ export const SideFollowList = (props: Props) => {
 
             <ListTextItem>
               <GrayText>おすすめ</GrayText>
-              <AllSeeButton >すべて見る</AllSeeButton>
             </ListTextItem>
 
             {

@@ -94,9 +94,6 @@ export const SwopperFollowList = (props: Props) => {
           おすすめ
         </GrayText>
 
-        <AllSeeButton>
-          すべて見る
-        </AllSeeButton>
       </ListTextItem>
 
       <UserSwiper
