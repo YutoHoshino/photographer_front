@@ -42,7 +42,7 @@ export const SearchForm = (props: Props) => {
           
         <TextField
           fullWidth
-          placeholder="キーワードを検索..."
+          placeholder="ユーザーを検索..."
           onChange={e => setSearchText(e.target.value)}
           InputProps={{
             disableUnderline: true,

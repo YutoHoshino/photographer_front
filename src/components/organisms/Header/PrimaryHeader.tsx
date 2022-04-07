@@ -19,7 +19,7 @@ import { AuthContext } from "App";
 import { PostModal } from "components/organisms/Modal/PostModal";
 import { UserModal } from "components/organisms/Modal/UserModal";
 
-const HeaderBar = styled(AppBar)`
+const HeaderBar = styled.div`
   background: white;
   box-shadow: none;
   border-bottom: solid 1px #dbdbdb;

@@ -25,6 +25,7 @@ interface Props {
   anchorEl: any,
   postId: Number | null
   setAnchorEl: any,
+  CurrentUserPost: boolean
 }
 
 export const PostActionModal = (props: Props) => {
@@ -62,11 +63,17 @@ export const PostActionModal = (props: Props) => {
         <p>詳細</p>
       </MenuItem>
 
-      <SMenuItem 
-        onClick={handleDelete}>
-        <DeleteIcon/>
-        <p>削除</p>
-      </SMenuItem>
+      {
+        props.CurrentUserPost ?
+        <SMenuItem 
+          onClick={handleDelete}>
+          <DeleteIcon/>
+          <p>削除</p>
+        </SMenuItem>
+        :
+        <></>
+      }
+
     </Menu>
   )
 }

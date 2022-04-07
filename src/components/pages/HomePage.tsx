@@ -73,6 +73,7 @@ export const HomePage = memo(() => {
 
                     <PostCardHeader 
                       postdata={postdata}
+                      currentUser={currentUser}
                     />
 
                     <PostSwiper 

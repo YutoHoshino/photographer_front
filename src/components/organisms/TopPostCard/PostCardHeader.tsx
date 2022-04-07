@@ -15,6 +15,7 @@ import { PostActionModal } from "components/organisms/Modal/PostActionModal";
 
 // interface
 import { PostData } from "interfaces/data/PostData";
+import { User } from 'interfaces/get/User';
 
 
 const NoneDiv = styled.div`
@@ -26,6 +27,7 @@ const UserName = styled.div`
 
 interface Props {
   postdata: PostData
+  currentUser: User
 }
 
 export const PostCardHeader = (props: Props) => {
@@ -41,7 +43,9 @@ export const PostCardHeader = (props: Props) => {
 
   const history = useHistory();
 
-  const { postdata } = props
+  const { postdata, currentUser } = props
+
+  const CurrentUserPost = postdata.user.name == currentUser.name
 
   return (
     <>
@@ -79,6 +83,7 @@ export const PostCardHeader = (props: Props) => {
         anchorEl={anchorEl}
         postId={postId}
         setAnchorEl={setAnchorEl}
+        CurrentUserPost={CurrentUserPost}
       />
       
     </>
